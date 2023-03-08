@@ -19,7 +19,7 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse) => {
                 numDigits: 1,
             })
 
-            indexFile(
+            indexResponse(
                 request,
                 indexFile,
                 contentPath,

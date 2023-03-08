@@ -63,7 +63,7 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory =
 const indexResponse = (request, indexFile, contentPath, twilioResponse, subDirectory = "") => {
     if (indexFile.endsWith(".txt")) {
         // TODO: Read Speak index
-        const indexText = fs.readFileSync(path.join(contentPath, indexFile)) 
+        const indexText = fs.readFileSync(path.join(contentPath, indexFile)).toString() 
         twilioResponse.say(indexText);
     } else {
         // Play index 
@@ -109,7 +109,6 @@ module.exports = function () {
                             voiceResponse.say('Internal selection error');
                         }
                     } else {                        
-                        // Play index.mp3 or speak index.txt
                         twilioVoiceResponse(
                             request,
                             contentPath,

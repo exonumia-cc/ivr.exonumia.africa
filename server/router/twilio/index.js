@@ -6,7 +6,7 @@ const fs = require("fs")
 const rootDirectory = path.resolve("server/static/audio")
 // const rootDirectoryContent = fs.readdirSync(path.join(rootDirectory, "/why-bitcoin"))
 
-const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory) => {
+const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory = "") => {
     const contentPathFiles = fs.readdirSync(contentPath)
     const indexFile = contentPathFiles.find(f => f.startsWith("index"))
                         
@@ -15,7 +15,7 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory) 
             // We should gather content if we have multiple files
             const gather = voiceResponse.gather({
                 timeout: 20,
-                action: `https://ivs.exonumia.africa/twilio/${request.path}${subDirectory}`,
+                action: `https://ivs.exonumia.africa/twilio${request.path}${subDirectory}`,
                 numDigits: 1,
             })
 
@@ -51,7 +51,7 @@ const indexResponse = (request, indexFile, contentPath, twilioResponse) => {
             {
                 loop: 2,
             }, 
-            `https://ivs.exonumia.africa/static/audio/${request.path}/${indexFile}`
+            `https://ivs.exonumia.africa/static/audio${request.path}/${indexFile}`
         )
     }
 }

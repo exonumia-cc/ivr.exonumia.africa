@@ -6,7 +6,7 @@ const fs = require("fs")
 const rootDirectory = path.resolve("server/static/audio")
 // const rootDirectoryContent = fs.readdirSync(path.join(rootDirectory, "/why-bitcoin"))
 
-const twilioVoiceResponse = (request, contentPath, voiceResponse) => {
+const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory) => {
     const contentPathFiles = fs.readdirSync(contentPath)
     const indexFile = contentPathFiles.find(f => f.startsWith("index"))
                         
@@ -15,7 +15,7 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse) => {
             // We should gather content if we have multiple files
             const gather = voiceResponse.gather({
                 timeout: 20,
-                action: `https://ivs.exonumia.africa/twilio/${request.path}`,
+                action: `https://ivs.exonumia.africa/twilio/${request.path}${subDirectory}`,
                 numDigits: 1,
             })
 
@@ -81,7 +81,8 @@ module.exports = function () {
                             twilioVoiceResponse(
                                 request,
                                 path.join(contentPath, selectedDirectory),
-                                voiceResponse
+                                voiceResponse,
+                                `/${selectedDirectory}`
                             )
                         } else {
                             voiceResponse.say('Internal selection error');
@@ -91,7 +92,8 @@ module.exports = function () {
                         twilioVoiceResponse(
                             request,
                             contentPath,
-                            voiceResponse
+                            voiceResponse,
+                            ""
                         )
                     }
                 } else {

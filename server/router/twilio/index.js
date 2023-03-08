@@ -36,6 +36,24 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory =
                 voiceResponse,
                 subDirectory
             )
+
+            if (contentPathFiles.length == 1) {
+                // We should now play the previous menu...
+                const gather = voiceResponse.gather({
+                    timeout: 20,
+                    action: `https://ivs.exonumia.africa/twilio${request.path}`,
+                    numDigits: 1,
+                })
+
+                indexResponse(
+                    request,
+                    indexFile,
+                    contentPath,
+                    gather,
+                    ""
+                )
+            }
+            
         }   
     } else {
         voiceResponse.say('File not found');
@@ -49,9 +67,10 @@ const indexResponse = (request, indexFile, contentPath, twilioResponse, subDirec
         twilioResponse.say(indexText);
     } else {
         // Play index 
+        const contentPathFiles = fs.readdirSync(contentPath)
         twilioResponse.play(
             {
-                loop: 2,
+                loop: contentPathFiles.length > 1 ? 2 : 1,
             }, 
             `https://ivs.exonumia.africa/static/audio${request.path}${subDirectory}/${indexFile}`
         )

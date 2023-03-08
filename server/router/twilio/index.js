@@ -23,7 +23,8 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory =
                 request,
                 indexFile,
                 contentPath,
-                gather
+                gather,
+                subDirectory
             )
 
             voiceResponse.say(`We didn't receive any input. Goodbye!`);
@@ -32,7 +33,8 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory =
                 request,
                 indexFile,
                 contentPath,
-                voiceResponse
+                voiceResponse,
+                subDirectory
             )
         }   
     } else {
@@ -40,7 +42,7 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory =
     }
 }
 
-const indexResponse = (request, indexFile, contentPath, twilioResponse) => {
+const indexResponse = (request, indexFile, contentPath, twilioResponse, subDirectory = "") => {
     if (indexFile.endsWith(".txt")) {
         // TODO: Read Speak index
         const indexText = fs.readFileSync(path.join(contentPath, indexFile)) 
@@ -51,7 +53,7 @@ const indexResponse = (request, indexFile, contentPath, twilioResponse) => {
             {
                 loop: 2,
             }, 
-            `https://ivs.exonumia.africa/static/audio${request.path}/${indexFile}`
+            `https://ivs.exonumia.africa/static/audio${request.path}${subDirectory}/${indexFile}`
         )
     }
 }

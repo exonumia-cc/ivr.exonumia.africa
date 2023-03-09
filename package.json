@@ -1,8 +1,8 @@
 {
-  "name": "ivs.exonumia.africa",
+  "name": "ivr.exonumia.africa",
   "version": "0.0.1",
   "description": "IVS logic for exonumia.africa content",
-  "main": "ivs.exonumia.africa.js",
+  "main": "ivr.exonumia.africa.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

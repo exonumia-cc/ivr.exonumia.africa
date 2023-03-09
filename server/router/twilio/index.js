@@ -15,7 +15,7 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory =
             // We should gather content if we have multiple files
             const gather = voiceResponse.gather({
                 timeout: 20,
-                action: `https://ivs.exonumia.africa/twilio${request.path}${subDirectory}`,
+                action: `https://ivr.exonumia.africa/twilio${request.path}${subDirectory}`,
                 numDigits: 1,
             })
 
@@ -41,7 +41,7 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory =
                 // We should now play the previous menu...
                 const gather = voiceResponse.gather({
                     timeout: 20,
-                    action: `https://ivs.exonumia.africa/twilio${request.path}`,
+                    action: `https://ivr.exonumia.africa/twilio${request.path}`,
                     numDigits: 1,
                 })
 
@@ -72,7 +72,7 @@ const indexResponse = (request, indexFile, contentPath, twilioResponse, subDirec
             {
                 loop: contentPathFiles.length > 1 ? 2 : 1,
             }, 
-            `https://ivs.exonumia.africa/static/audio${request.path}${subDirectory}/${indexFile}`
+            `https://ivr.exonumia.africa/static/audio${request.path}${subDirectory}/${indexFile}`
         )
     }
 }

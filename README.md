@@ -1,2 +1,2 @@
-# ivs.exonumia.africa
-IVS hotline code
+# ivr.exonumia.africa
+IVR hotline code

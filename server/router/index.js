@@ -11,13 +11,13 @@ module.exports = function () {
             const voiceResponse = new VoiceResponse();
             const gather = voiceResponse.gather({
                 timeout: 20,
-                action: "https://ivs.exonumia.africa/test-call/play",
+                action: "https://ivr.exonumia.africa/test-call/play",
                 numDigits: 1,
             })
 
             gather.play({
                 loop: 2,
-            }, 'https://ivs.exonumia.africa/static/audio/bitcoin-menu-norm.mp3')
+            }, 'https://ivr.exonumia.africa/static/audio/bitcoin-menu-norm.mp3')
             
             voiceResponse.say('We didn\'t receive any input. Goodbye!');
             
@@ -40,22 +40,22 @@ module.exports = function () {
                 voiceResponse.play({
                     loop: 1,
                     Digits: 1,
-                }, 'https://ivs.exonumia.africa/static/audio/bitcoin-xhosa.mp3');
+                }, 'https://ivr.exonumia.africa/static/audio/bitcoin-xhosa.mp3');
             }  else if (request.body.Digits == "2") {
                 voiceResponse.play({
                     loop: 1,
                     Digits: 2,
-                }, 'https://ivs.exonumia.africa/static/audio/bitcoin-sesotho-norm.mp3');
+                }, 'https://ivr.exonumia.africa/static/audio/bitcoin-sesotho-norm.mp3');
             }  else if (request.body.Digits == "3") {
                 voiceResponse.play({
                     loop: 1,
                     Digits: 3,
-                }, 'https://ivs.exonumia.africa/static/audio/bitcoin-zulu-norm.mp3');
+                }, 'https://ivr.exonumia.africa/static/audio/bitcoin-zulu-norm.mp3');
             }  else {
                 voiceResponse.play({
                     loop: 1,
                     Digits: 1,
-                }, 'https://ivs.exonumia.africa/static/audio/bitcoin-xhosa.mp3');
+                }, 'https://ivr.exonumia.africa/static/audio/bitcoin-xhosa.mp3');
             }
 
             response.setHeader("Content-Type", "text/xml");

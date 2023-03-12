@@ -4,9 +4,39 @@ const VoiceResponse = require('twilio').twiml.VoiceResponse;
 const path = require("path")
 const fs = require("fs")
 
-const ivrDomain = config.get("server.domain") 
-const rootDirectory = path.resolve("server/static/audio")
-// const rootDirectoryContent = fs.readdirSync(path.join(rootDirectory, "/why-bitcoin"))
+const ivrDomain = process.env.IVR_DOMAIN || config.get("ivr.domain") 
+const MEDIA_DIRECTORY = process.env.IVR_MEDIA_DIRECTORY || config.get("ivr.dir")
+const rootDirectory = path.resolve(MEDIA_DIRECTORY)
+
+const rootMediaDirectories = fs.readdirSync(rootDirectory)
+
+const traverseAndValidate = (mediaDirectory) => {
+    const indexMedia = [
+        "index.mp3",
+        "index.txt"
+    ]
+    const mediaDirectoryContent = fs.readdirSync(mediaDirectory)
+
+    if (mediaDirectoryContent.some(c => indexMedia.includes(c))) {
+        // console.info("Media: ", mediaDirectoryContent)
+        const subDirectories = mediaDirectoryContent.filter(d => fs.statSync(
+            path.join(mediaDirectory, d)).isDirectory()
+        )
+        // Traverse subDirectories
+        subDirectories.forEach(subDirectory => {
+            const subDirectoryPath = path.join(mediaDirectory, subDirectory)
+            traverseAndValidate(subDirectoryPath)
+        })
+    } else {
+        console.error("No media in directory ", mediaDirectory)
+    }
+}
+
+rootMediaDirectories.forEach(rootMediaDirectory => {
+    // Traverse and confirm that the folder structure is valid
+    traverseAndValidate(path.join(rootDirectory, rootMediaDirectory))
+    console.log(`https://${ivrDomain}/twilio/${rootMediaDirectory}`)
+})
 
 const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory = "") => {
     const contentPathFiles = fs.readdirSync(contentPath)

@@ -1,6 +1,9 @@
 {
     "server": {
-        "domain": "ivr.exonumia.africa",
         "port": 5656
+    },
+    "ivr": {
+        "domain": "ivr.exonumia.africa",
+        "dir": "server/static/audio"
     }
 }

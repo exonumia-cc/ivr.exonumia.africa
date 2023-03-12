@@ -5,8 +5,8 @@ const bodyParser = require("body-parser");
 module.exports = function () {
     var server = {}; 
 
-    server.run = (db) => {
-        console.log("Starting Server")
+    server.run = () => {
+        console.log("Starting Server to host IVR content:")
         return new Promise(async (resolve, reject) => {
             const app = express();
             
@@ -14,14 +14,10 @@ module.exports = function () {
             app.use(bodyParser.json());
             
             app.use('/static', express.static("server/static"));
-            // app.use('/static', express.static("node_modules/machankura-website/build/static"));
             
-            // TODO: check that user has an individualEntityUser....
             var router = require('./router/index.js')();
             app.use('/', router);
             
-
-            // TODO: Handle authentication and confirm this isn't being spoofed
             const port = process.env.PORT || config.get("server.port");
 
             server.instance = app.listen(port);

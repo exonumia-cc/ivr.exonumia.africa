@@ -1,3 +1,4 @@
+const config = require("config");
 const express = require('express');
 const bodyParser = require("body-parser");
 
@@ -21,11 +22,11 @@ module.exports = function () {
             
 
             // TODO: Handle authentication and confirm this isn't being spoofed
-            const port = process.env.PORT || 5656;
+            const port = process.env.PORT || config.get("server.port");
 
             server.instance = app.listen(port);
 
-            resolve(port);
+            resolve(server.instance);
         });
     }
     

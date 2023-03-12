@@ -1,0 +1,6 @@
+{
+    "server": {
+        "domain": "ivr.exonumia.africa",
+        "port": 5656
+    }
+}

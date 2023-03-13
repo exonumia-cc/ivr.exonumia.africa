@@ -1,10 +1,10 @@
-# Explain Bitcoin Like I’m Five
+Explain Bitcoin Like I’m Five
 
 by Nik Custodio [2013/12/12](https://www.freecodecamp.org/news/explain-bitcoin-like-im-five-73b4257ac833/)
 
 <LanguageDropdown/>
 
-### If you still can’t figure out what the heck a bitcoin is…
+If you still can’t figure out what the heck a bitcoin is…
 
 We’re sitting on a park bench. It’s a great day.
 
@@ -14,7 +14,7 @@ You now have one apple and I have zero.
 
 That was simple, right?
 
-### Let’s look closely at what happened:
+Let’s look closely at what happened:
 
 My apple was physically put into your hand.
 
@@ -28,7 +28,7 @@ So that’s what an in-person exchange looks like. I guess it’s really the sam
 
 But I’m getting ahead of myself.
 
-### Back to apples!
+Back to apples!
 
 Now say, I have one digital apple. Here, I’ll give you my digital apple.
 
@@ -48,7 +48,7 @@ Until now.
 
 But let’s try to think of a solution on our own.
 
-### Ledgers
+Ledgers
 
 Maybe these digital apples need to be tracked in a ledger. It’s basically a book where you track all transactions — an accounting book.
 
@@ -56,7 +56,7 @@ This ledger, since it’s digital, needs to live in its own world and have someo
 
 Say, just like World of Warcraft. Blizzard, the guys who created the online game, have a “digital ledger” of all the rare flaming fire swords that exist in their system. So, cool, someone like them could keep track of our digital apples. Awesome — we solved it!
 
-### Problems
+Problems
 
 There’s a bit of a problem though:
 
@@ -66,7 +66,7 @@ There’s a bit of a problem though:
 
 > Is there any way to closely replicate our park bench, just you-and-me, transaction digitally? Seems kinda tough…
 
-### The Solution
+The Solution
 
 What if we gave this ledger — to everybody? Instead of the ledger living on a Blizzard computer, it’ll live in everybody’s computers. All the transactions that have ever happened, from all time, in digital apples will be recorded in it.
 
@@ -76,7 +76,7 @@ Plus it’s not controlled by one person, so I know there’s no one that can ju
 
 You could participate in this network too and update the ledger and make sure it all checks out. For the trouble, you could get like 25 digital apples as a reward. In fact, that’s the only way to create more digital apples in the system.
 
-### I simplified quite a bit
+I simplified quite a bit
 
 … but that system I explained exists. It’s called the Bitcoin protocol. And those digital apples are the *“bitcoins”* within the system. Fancy!
 
@@ -104,7 +104,7 @@ I have my own opinion about it.
 
 That’s a story for another time though. But kid, you now know more about Bitcoin than most.
 
-#### Recommend Reading (Updated 2017)
+Recommend Reading (Updated 2017)
 
 [“You Don’t Understand Bitcoin Because You Think Money is Real”](https://medium.com/@mariabustillos/you-dont-understand-bitcoin-because-you-think-money-is-real-5aef45b8e952?source=linkShare-2d6f142ff3cc-1512362100) by [Maria Bustillos](https://www.freecodecamp.org/news/explain-bitcoin-like-im-five-73b4257ac833/undefined) is a good follow-up read.
 

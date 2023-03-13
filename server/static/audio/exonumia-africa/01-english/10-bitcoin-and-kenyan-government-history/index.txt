@@ -1,4 +1,4 @@
-# Bitcoin and Kenyan Government History
+Bitcoin and Kenyan Government History
 
 by Michael Kimani Kioneki [2022/01/05](https://twitter.com/pesa_africa/status/1357938874845175809)
 
@@ -16,7 +16,7 @@ This is a similar notice by the [Central Bank of Kenya 🇰🇪prohibiting Kenya
 
 As a Kenyan from East Africa, i cant help but laugh at my crypto friends from Nigeria. Finally, they feel our pain for the last 7 years! There is a lot to unpack here so here is a thread on my associative thoughts
 
-### July 9, 2013
+July 9, 2013
 
 “Kenya’s Kipochi wallet was the first crypto bitcoin company that launched a product that allowed people in Africa to send and receive bitcoins, plus convert them to and from the Kenyan currency M-Pesa”
 
@@ -26,7 +26,7 @@ It wasn’t long before the Central bank of Kenya and Safaricom Mpesa came down 
 
 “Within a week our connection w/ M-Pesa through merchant provider Kopo Kopo was shut down. It took us more than a week for us to find out that Safaricom had forced Kopo Kopo to shut us down”
 
-### August 2013
+August 2013
 
 “In August 2013, Kipochi received an official notification from the Central Bank of Kenya that they needed to know who we were, what we were up to and what the hell Bitcoin was.”
 
@@ -45,7 +45,7 @@ The next company on the guillotine was Bitpesa. Bitpesa launched a crypto produc
 
 This too did not last long
 
-### December 18, 2015 
+December 18, 2015 
 
 [CBK Circular](https://www.centralbank.go.ke/uploads/banking_circulars/2075994161_Banking%20Circular%20No%2014%20of%202015%20-%20Virtual%20Currencies%20-%20Bitcoin.pdf)
 
@@ -63,7 +63,7 @@ No access to bank account and Mpesa gateway services crippled Bitpesa business. 
 
 [Petition NO. 512 of 215](http://kenyalaw.org/caselaw/cases/view/117270/)
 
-### December 28, 2015
+December 28, 2015
 
 I penned an opinion article for Kenya’s leading newspaper the Daily Nation, bashing the CBK for foolish short term thinking. I said “4 years from now people will laugh at CBK for this ridiculous notice” 
 
@@ -84,7 +84,7 @@ Safaricom argued that the suspension of service to Lipisha was justified because
 But a lawyer for the two firms said Safaricom had misunderstood the central bank’s requirements.
 “[The central bank] told BitPesa that bitcoins are not regulated in Kenya but Safaricom insists that it produces a licence to that effect,”
 
-### December 15, 2015
+December 15, 2015
 
 Bitpesa lost the case
 
@@ -150,7 +150,7 @@ I find it amusing that Kenyan regulators, officials and ‘Fintech’ experts th
 
 Every year they delay, informal volumes grow
 
-### December 16, 2020 
+December 16, 2020 
 
 UGANDA recently made ammendments to their Anti Money Laundering Act 2013 to include virtual asset service providers. Perhaps the only notable effort from government in the region to address the issues above
 

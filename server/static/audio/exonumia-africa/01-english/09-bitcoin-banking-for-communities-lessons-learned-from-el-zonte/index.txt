@@ -1,10 +1,10 @@
-# Bitcoin Banking for Communities: Lessons Learned from Bitcoin Beach
+Bitcoin Banking for Communities: Lessons Learned from Bitcoin Beach
 
 by Galoy Money [2021/11/10](https://galoy.io/bitcoin-banking-for-communities-lessons-learned-from-el-zonte/)
 
 <LanguageDropdown/>
 
-## Foreword
+Foreword
 
 Revolutionary change is usually sparked by those that are too young and naïve to understand that their undertaking is doomed to fail. While I cannot claim the excuse of youth, when Bitcoin Beach launched, thankfully I had not yet spent enough time on Twitter to “know” that Bitcoin would never be used by people to buy a cup of coffee. Had we done the prudent research or started with standard feasibility studies, we would have realized our folly. Thankfully most of you can now find El Salvador on a map because we were too stupid to know better.
 
@@ -18,7 +18,7 @@ So here in 2021 we see a small impoverished nation showing the world how Bitcoin
 
 – Mike Peterson ([@bitcoinbeach](http://twitter.com/bitcoinbeach))
 
-## From Local Project to Legal Tender in Two Years
+From Local Project to Legal Tender in Two Years
 
 The Bitcoin Beach project started with a simple yet aspirational question: Can we build a sustainable circular economy on Bitcoin?
 
@@ -26,7 +26,7 @@ The answer is a resounding yes. What started as a community project in a remote 
 
 In this guide we cover six lessons learned developing the Bitcoin Beach Wallet and the underlying open source infrastructure that powers it. Our aim is to help communities around the world accelerate their own learning and adoption of Bitcoin and the Lightning Network.
 
-## What is Bitcoin Beach?
+What is Bitcoin Beach?
 
 On the Pacific Coast of El Salvador sits El Zonte, a small surf town with a population of 3,000. Its residents have been left out of the traditional banking system and have grappled with gang violence and a lack of financial inclusion for decades. Over the past ten years, a small group of individuals have been working to ignite change and bring hope back to El Zonte.
 
@@ -72,7 +72,7 @@ By now most people know the end of the story: El Salvador President Nayib Bukele
 
 Most importantly, Bitcoin Beach has created a community where the kids of El Zonte can dream and build their future.
 
-## The Bitcoin Beach Wallet
+The Bitcoin Beach Wallet
 
 The Bitcoin Beach Wallet is an open source Bitcoin community banking solution. One that was designed to meet the needs of the merchants and community members in El Zonte. It utilizes a multisig shared custody model that offers an alternative to the standard non-custodial and custodial solutions that are most widely available today.
 
@@ -103,7 +103,7 @@ If you’re interested in building a front end mobile application like the Bitco
 
 Without further ado, here are the top lessons Galoy learned from building in El Zonte.
 
-## Lesson 1: Education is Paramount
+Lesson 1: Education is Paramount
 
 Bitcoin is a difficult thing to understand. It cuts across computer science, economics, history, cryptography, monetary policy and more. Luckily, somebody does not need to fully grasp Bitcoin to use and benefit from it. How many people who have used fiat their entire lives actually understand how money works?
 
@@ -125,7 +125,7 @@ Here are five tips to consider when educating your community:
 
 As you build your community, take the time to connect with and learn from the people of [Bitcoin Beach](http://bitcoinbeach.com/). They are giants on whose shoulders you can stand. Their dedication to service existed before Bitcoin, and it transcends Bitcoin. Bitcoin has now become a medium through which they can bring opportunity and hope for the future of El Salvador.
 
-## Lesson 2: Lightning is an Accelerant for Bitcoin as Money
+Lesson 2: Lightning is an Accelerant for Bitcoin as Money
 
 The Lightning Network is the most underestimated protocol in the world. Just two years ago it was a #reckless way to transact. Now it’s being used by McDonalds, Starbucks and Pizza Hut in El Salvador. Growth of nodes, channels and capacity is happening at a mind-blowing pace. The recent Arcane Research report “[The State of the Lightning Network](https://www.research.arcane.no/the-state-of-lightning)” provides a glimpse into some of the growth metrics and expectations.
 
@@ -151,7 +151,7 @@ The Lightning Network served as an accelerant and an enabler of the vision of th
 
 Lightning Network integration has become table stakes for any wallet or financial services being built on Bitcoin. It unlocks vast potential for close-to-free, global, real-time, permissionless transactions.
 
-## Lesson 3: Merchant Onboarding is Necessary to Foster a Local Circular Economy
+Lesson 3: Merchant Onboarding is Necessary to Foster a Local Circular Economy
 
 Standing up a circular Bitcoin economy presents a “chicken and egg” problem. Residents need places to use it, and merchants need customers who will spend it. Making it easy and desirable to accept Bitcoin is an important step in stimulating local community adoption.
 
@@ -174,7 +174,7 @@ Here are some experiences that shaped how we design for merchants:
 
 Don’t lose focus on the important role that merchants play in supporting a Bitcoin economy. The needs of merchants across each community will be different, so be sure to spend time understanding and designing for them early on.
 
-## Lesson 4: User Experience Must be Developed Within the Context of the Community
+Lesson 4: User Experience Must be Developed Within the Context of the Community
 
 Bitcoin Beach exists at the frontier of Lightning Network adoption. As Mike often says “There are little kids in El Zonte who make more Lightning transactions than most OG Bitcoiners.”
 
@@ -199,7 +199,7 @@ Six user experience learnings from testing the Bitcoin Beach Wallet in the wild:
 5. **Payment notes help with record keeping.** Both customers and merchants can benefit from being able to add notes to transactions. Based on community input the feature has evolved from private (at the user level) to shared. Now the sender and receiver can both see the note attached to the transaction.
 6. **Stay on top of how lightning payment formats are evolving.** New payment formats such as Lightning Address, static invoices and BOLT 12 are emerging at a rapid pace. Selecting which formats to adopt will depend on the use case. The Bitcoin Beach Wallet initially launched with a printed QR code that led to an invoice page (such as ln.bitcoinbeach.com/mamarosa). New formats are now being considered in order to reduce friction and improve interoperability.
 
-## Lesson 5: Community Custody is a Bridge to Self-custody
+Lesson 5: Community Custody is a Bridge to Self-custody
 
 Self custody is the desired end state for every person holding wealth in bitcoin. The number one rule of Bitcoin custody is “Not your keys, not your coins.”
 
@@ -207,7 +207,7 @@ Self custody is not the only way, nor the most appropriate way to onboard commun
 
 > “You have to take baby steps. If you put up all these hurdles in the beginning, people will never enter the ecosystem.” – Mike Peterson on [Tales from the Crypt #173](https://open.spotify.com/episode/6jyXUPu4n3nYDi4jbDFYBd?si=gSLNHJpUQk2ASevhiSBz-A)
 
-### The spectrum of Bitcoin custody
+The spectrum of Bitcoin custody
 
 Bitcoin custody models sit along a spectrum not unlike the convenience/privacy spectrum. On one side, you have simple UX, easy access to funds and integration across the fiat banking ecosystem. On the other, you have hand-stamped metal, sharded seed phrases and multi-signature custody models that require multiple steps or multiple people to move funds.
 
@@ -223,11 +223,11 @@ Different use cases have different risk scenarios that make trade-offs acceptabl
 
 Every model has value, so long as 1) it is used for a fitting purpose and 2) it guides people further to the right as they accumulate more of their wealth in bitcoin.
 
-### Community custody: harkening back to the days of union banks
+Community custody: harkening back to the days of union banks
 
 The custody model that we landed on for Bitcoin Beach is what Galoy refers to as “community custody.” It is a multi signature solution where the keys for the funds in cold storage are held by established members of the local community. This model reduces reliance on centralized companies outside of the community while also reducing friction of onboarding members to the network.
 
-### A note on community banking
+A note on community banking
 
 Community banks have existed around the world for hundreds of years. Their core purpose is to support the socio-economic needs of a group of people with a shared interest. Often the shared interest is centered around a geographic location. Funds held by community banks are sourced from and loaned to people within the community in a more relationship-driven manner than the typical universal bank.
 
@@ -235,7 +235,7 @@ Community banks are especially important to communities like El Zonte because th
 
 For more insight into the intersection between Bitcoin and community banking, see the Fulgur Ventures article “[The role of Bitcoin for community banking.](https://medium.com/@fulgur.ventures/the-role-of-bitcoin-for-community-banking-623068c59882)”
 
-### Bitcoin Beach Wallet as a community Bitcoin bank
+Bitcoin Beach Wallet as a community Bitcoin bank
 
 Bitcoin Beach Wallet funds are managed by members within the community, providing a frictionless and cost-effective means of payment designed to support the local economy.
 
@@ -247,7 +247,7 @@ Here’s why community custody works for Bitcoin Beach:
 
 Open source community custody solutions have emerged as a valuable model for onboarding communities to Bitcoin. We believe they will play a significant role in bringing Bitcoin to the first billion users.
 
-## Lesson 6: Start Small and Build Momentum Before Expanding
+Lesson 6: Start Small and Build Momentum Before Expanding
 
 It is exciting to see the groundswell of communities around the world working to connect their towns and cities to the Bitcoin network. [Bitcoin Lake](https://twitter.com/LakeBitcoin) in Guatemala and [Bitcoin Beach Brasil](https://twitter.com/bitcoinbeachbr) are two early examples. Some Bitcoiners have started calling Tonga “Bitcoin Island” after hearing [Lord Fusitu’a’s](https://twitter.com/LordFusitua) four-part plan to bring Bitcoin to his country.
 
@@ -266,7 +266,7 @@ To those just starting out we’d offer two main thoughts on scaling from an ide
 
 Many people first heard about Bitcoin Beach in 2021, but the project has been years in the making. The Bitcoin Beach team who have dedicated thousands of hours teaching the basics, answering questions and troubleshooting issues are the linchpin of this entire project. Without them, Bitcoin Beach would not be the success story you read about today.
 
-### Considerations for Starting a Bitcoin Bank
+Considerations for Starting a Bitcoin Bank
 
 Build a strong foundation with the right team, technology and training.
 
@@ -296,7 +296,7 @@ Build a strong foundation with the right team, technology and training.
 </figure>
 </center>
 
-## Conclusion
+Conclusion
 
 It is inspiring to see communities and institutions around the world working alongside each other to bring Bitcoin to the first Billion people. We hope that this guide helps accelerate learning and encourage good discussion.
 

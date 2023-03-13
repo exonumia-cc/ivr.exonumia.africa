@@ -170,8 +170,10 @@ module.exports = function () {
             }
 
             response.setHeader("Content-Type", "text/xml");
+            const result = voiceResponse.toString()
+            console.log("Result: ", result)
             response.send(
-                voiceResponse.toString()
+                result
             )
             response.end()
         } else {

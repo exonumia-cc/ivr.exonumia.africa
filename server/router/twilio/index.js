@@ -96,7 +96,12 @@ const indexResponse = (request, indexFile, contentPath, twilioResponse, subDirec
     if (indexFile.endsWith(".txt")) {
         // TODO: Read Speak index
         const indexText = fs.readFileSync(path.join(contentPath, indexFile)).toString() 
-        twilioResponse.say(indexText);
+        twilioResponse.say(
+            {
+                loop: contentPathFiles.length > 1 ? 2 : 1,
+            },
+            indexText
+        );
     } else {
         // Play index 
         const contentPathFiles = fs.readdirSync(contentPath)
@@ -124,8 +129,10 @@ module.exports = function () {
                     const contentPathFiles = fs.readdirSync(contentPath)
 
                     console.log("Digits: ", request.body.Digits)
+                    console.log("Path: ", request.path)
                     if (request.body.Digits) {
                         const contentPathFileExcludingIndex = contentPathFiles.filter(f => !f.startsWith("index"))
+                        console.log("Selection: ", contentPathFileExcludingIndex)
                         // We have gathered an input
                         const selectedDirectoryIndex = Number(request.body.Digits - 1)
                         const selectedDirectory = contentPathFileExcludingIndex.at(selectedDirectoryIndex) 

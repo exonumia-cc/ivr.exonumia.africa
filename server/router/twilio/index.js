@@ -80,9 +80,25 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory =
                 indexResponse(
                     request,
                     indexFile,
-                    path.join(rootDirectory, request.path), // Return previous directory content
+                    contentPath,
                     gather,
+                    subDirectory
+                )
+
+                indexResponse(
+                    request,
+                    indexFile,
+                    path.join(rootDirectory, request.path), // Return previous directory content
+                    voiceResponse,
                     ""
+                )
+            } else {
+                indexResponse(
+                    request,
+                    indexFile,
+                    contentPath,
+                    voiceResponse,
+                    subDirectory
                 )
             }
             
@@ -171,7 +187,6 @@ module.exports = function () {
 
             response.setHeader("Content-Type", "text/xml");
             const result = voiceResponse.toString()
-            console.log("Result: ", result)
             response.send(
                 result
             )

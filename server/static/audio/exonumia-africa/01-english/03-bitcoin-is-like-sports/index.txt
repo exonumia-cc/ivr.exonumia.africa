@@ -2,7 +2,7 @@ Bitcoin Is Like Sports
 
 by @thebitcoinrabbi [2021/01/13](https://twitter.com/thebitcoinrabbi/status/1349445548500262916)
 
-<LanguageDropdown/>
+
 
 More often I have been explaining how #bitcoin works and is decentralized in context of a sports game. I find that it helps to answer a lot of the common questions:
 

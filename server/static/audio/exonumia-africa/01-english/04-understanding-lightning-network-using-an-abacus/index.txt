@@ -2,7 +2,7 @@ Understanding Lightning Network using an Abacus
 
 by Roy Sheinfeld [2018/03/25](https://medium.com/breez-technology/understanding-lightning-network-using-an-abacus-daad8dc4cf4bs)
 
-<LanguageDropdown/>
+
 
 
 I’ve received a lot of positive feedback following my previous article, [Lighting Network is the Future of Bitcoin](https://medium.com/@kingonly/the-future-of-bitcoin-3187aefe2746). However, while reading some of the feedback, it became clear to me that some people don’t fully understand how Lightning Network (LN) actually works. In this article, I will try to demystify the concept behind LN and its payment channels using an abacus analogy, without getting into the technical specifics of LN implementation.

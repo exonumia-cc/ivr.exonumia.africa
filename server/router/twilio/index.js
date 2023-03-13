@@ -61,14 +61,6 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory =
 
             voiceResponse.say(`We didn't receive any input. Goodbye!`);
         } else {
-            indexResponse(
-                request,
-                indexFile,
-                contentPath,
-                voiceResponse,
-                subDirectory
-            )
-
             if (contentPathFiles.length == 1) {
                 // We should now play the previous menu...
                 const gather = voiceResponse.gather({

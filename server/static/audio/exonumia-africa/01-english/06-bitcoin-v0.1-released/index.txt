@@ -1,6 +1,6 @@
 Bitcoin v0.1 released
 
-by Satoshi Nakamoto on 2009/01/09
+by Satoshi Nakamoto on 2009/01/09.
 
 
 Announcing the first release of Bitcoin, a new electronic cash

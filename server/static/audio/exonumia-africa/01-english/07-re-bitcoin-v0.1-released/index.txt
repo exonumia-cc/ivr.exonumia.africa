@@ -1,6 +1,6 @@
 Re: Bitcoin v0.1 released
 
-by Hal Finney on 2009/01/11
+by Hal Finney on 2009/01/11.
 
 Satoshi Nakamoto writes:
 

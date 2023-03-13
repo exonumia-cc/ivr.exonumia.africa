@@ -1,6 +1,6 @@
 Understanding Lightning Network using an Abacus
 
-by Roy Sheinfeld on 2018/03/25
+by Roy Sheinfeld on 2018/03/25.
 
 
 

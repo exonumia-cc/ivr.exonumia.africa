@@ -80,7 +80,7 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory =
                 indexResponse(
                     request,
                     indexFile,
-                    contentPath,
+                    path.join(rootDirectory, request.path), // Return previous directory content
                     gather,
                     ""
                 )

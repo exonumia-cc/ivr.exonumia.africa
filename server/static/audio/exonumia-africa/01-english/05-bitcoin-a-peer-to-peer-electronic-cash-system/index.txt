@@ -1,6 +1,6 @@
 Bitcoin: A Peer-to-Peer Electronic Cash System
 
-by Satoshi Nakamoto [2008/10/31](/bitcoin.pdf)
+by Satoshi Nakamoto on 2008/10/31
 
 
 

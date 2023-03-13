@@ -1,6 +1,6 @@
 Understanding Lightning Network using an Abacus
 
-by Roy Sheinfeld [2018/03/25](https://medium.com/breez-technology/understanding-lightning-network-using-an-abacus-daad8dc4cf4bs)
+by Roy Sheinfeld on 2018/03/25
 
 
 

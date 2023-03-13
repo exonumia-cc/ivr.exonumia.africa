@@ -1,10 +1,13 @@
 const express = require("express")
 
 module.exports = function () {
-    var router = express.Router();
+    const router = express.Router();
 
-    var twilioRouter = require('./twilio/index.js')();
+    const twilioRouter = require('./twilio/index.js')();
+    const africasTalkingRouter = require('./africas-talking/index.js')();
+
     router.use('/twilio', twilioRouter);
+    router.use('/africas-talking', africasTalkingRouter);
     
     // // 404 pages...
     router.use((request, response, next) => {

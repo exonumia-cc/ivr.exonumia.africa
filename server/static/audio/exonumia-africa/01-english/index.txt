@@ -2,22 +2,40 @@ Welcome to Bitcoin, newcomers!
 
 by Jameson Lopp on 2017/11/19
 
+Here's your Frequently Asked Questions:
 
+Question: Who should I trust?  
+Answer: **Nobody.**
 
-Here's your FAQ:
+Question: When should I sell?  
+Answer: **Never.**
 
-Q: Who should I trust?  
-A: **Nobody.**
+Question: Is Bitcoin dying because ____?  
+Answer: **No.**
 
-Q: When should I sell?  
-A: **Never.**
-
-Q: Is Bitcoin dying because ____?  
-A: **No.**
-
-Q: What have I gotten myself into?  
-A: **Nobody knows.**
+Question: What have I gotten myself into?  
+Answer: **Nobody knows.**
 
 
 Q: How do I learn more?  
-A: **We have a [wealth of content here](/int/en/translations/).** Or you can visit [lopp.net](https://www.lopp.net/bitcoin-information.html)
+A: **We have a wealth of content here.**
+
+To listen to "Explain Bitcoin Like I'm Five" press 1.
+
+To listen to "Bitcoin is Like" press 2.
+
+To listen to "Bitcoin is like sports" press 3.
+
+To listen to "Understanding the Lightning Network Using an Abacus" press 4.
+
+To listen to "Bitcoin A Peer To Peer Electronic Cash System" press 5.
+
+To listen to "Bitcoin version 0.1 released" press 6.
+
+To Listen to "Regarding: Bitcoin version 0.1 released" press 7.
+
+To Listen to "I am Hodling" press 8.
+
+To listen to "Bitcoin Banking for Communities, Lessons from El Zonte" press 9.
+
+Thank you.

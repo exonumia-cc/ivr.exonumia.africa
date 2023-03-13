@@ -93,6 +93,7 @@ const twilioVoiceResponse = (request, contentPath, voiceResponse, subDirectory =
 }
 
 const indexResponse = (request, indexFile, contentPath, twilioResponse, subDirectory = "") => {
+    const contentPathFiles = fs.readdirSync(contentPath)
     if (indexFile.endsWith(".txt")) {
         // TODO: Read Speak index
         const indexText = fs.readFileSync(path.join(contentPath, indexFile)).toString() 
@@ -104,7 +105,6 @@ const indexResponse = (request, indexFile, contentPath, twilioResponse, subDirec
         );
     } else {
         // Play index 
-        const contentPathFiles = fs.readdirSync(contentPath)
         twilioResponse.play(
             {
                 loop: contentPathFiles.length > 1 ? 2 : 1,

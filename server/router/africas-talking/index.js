@@ -8,7 +8,6 @@ const transformPlayTag = (ivrObject) => {
         return ivrObject
     }
     const keys = Object.keys(ivrObject)
-    console.log("Keys: ", keys)
 
     keys.forEach((key) => {
         if (!key.startsWith("?") && !key.startsWith("@") && !key.startsWith("#")) {
@@ -16,10 +15,7 @@ const transformPlayTag = (ivrObject) => {
                 ivrObject[key] = {
                     "@_url": ivrObject[key]["#text"]
                 }
-
-                console.log("Play: ", ivrObject[key])
             } else {
-                console.log("Traversing: ", ivrObject[key])
                 transformPlayTag(ivrObject[key])
             }
             
@@ -62,10 +58,12 @@ const translateToAfricasTalking = (ivrVoiceResponse) => {
     console.log("Translation: ", xmlContent)
     return xmlContent
 }
+
 module.exports = function () {
     var router = express.Router();
 
     router.use((request, response, next) => {
+        request.body.Digits = request.body.dtmfDigits
         const ivrVoiceResponse = ivr.produceIVRVoiceResponse(request)
         
         if (ivrVoiceResponse) {

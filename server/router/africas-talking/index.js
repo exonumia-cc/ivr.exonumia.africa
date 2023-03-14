@@ -43,18 +43,22 @@ const translateToAfricasTalking = (ivrVoiceResponse) => {
                 return "@_callbackUrl"
             }
             return attributeName
+        },
+        tagValueProcessor: (tagName, tagValue, jPath, hasAttributes, isLeafNode) => {
+            if (tagName === "Say") {
+                return tagValue.replaceAll("\n", " ")
+            }
+
+            return tagValue
         }
     });
     let ivrObject = transformPlayTag(parser.parse(ivrVoiceResponse));
-
-    console.log("IVR Object: ", ivrObject)
 
     const builder = new XMLBuilder({
         ignoreAttributes: false
     });
     const xmlContent = builder.build(ivrObject);
 
-    console.log("Original: ", ivrVoiceResponse)
     console.log("Translation: ", xmlContent)
     return xmlContent
 }
